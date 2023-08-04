@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <div class="header">
+      <h1>Rock, Paper, Scissors</h1>
+    </div>
+    <div class="content">
+      <p>Round <span class="round-counter">1</span></p>
+      <div class="scoreboard">
+        <p>Player: <span class="player-score">0</span></p>
+        <p>Computer: <span class="computer-score">0</span></p>
+      </div>
+      <div class="buttons">
+        <button class="btn-rock">Rock</button>
+        <button class="btn-paper">Paper</button>
+        <button class="btn-scissors">Scissors</button>
+      </div>
+      <div class="choices">
+        <p>Your Choice: <span class="player-choice"></span></p>
+        <p>Computer Choice: <span class="computer-choice"></span></p>
+      </div>
+      <p><span class="game-result"></span></p>
+    </div>
   </body>
 </html>
